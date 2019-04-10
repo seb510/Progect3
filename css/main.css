@@ -24,7 +24,6 @@ body {
 
 .mail {
 	font-size: 14px;
-	padding-left: 25px;
 }
 
 .logo {
@@ -40,12 +39,12 @@ body {
 .phone {
 	font-size: 16px;
 	font-weight: bold;
-	padding-left: 25px;
 }
 
 .fa-phone{
 	transform: rotate(92deg);
 }
+
 .fas {
 	margin-right: 10px;
 }
@@ -64,6 +63,11 @@ body {
 	display: block;
 }
 
+.butt {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 150px;
+}
 .button {
 	background: #ffb400;
 	color: black;
@@ -74,11 +78,19 @@ body {
 	padding: 19px 30px;
 	text-decoration: none;
 	font-weight: bold;
-	margin: 0px auto 0px auto;
 	display: block;
-	width: 222px;
+	width: 200px;
+	transition:  ease-in-out 1s;
 }
 
+.button:hover {
+	transform: scale(1.2);
+	background: #ffa200;
+}
+
+.button:active {
+	background: #ff7e00;
+}
 h2 {
 	font-size: 33px;
 	font-weight: bold;
@@ -95,9 +107,7 @@ h2 {
 	display: block;
 	border-radius: 50%;
 	margin: 50px auto 26px auto;
-    
 }
-
 
 .about-title {
 	font-size: 21px;
@@ -113,14 +123,9 @@ h2 {
 }
 
 .social-block {
-	margin: 30px auto;
-	width: 120px;
-}
-
-.clearfix:after {
-	content:'';
-	display: block;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 45px;
 }
 
 .social {
@@ -128,34 +133,28 @@ h2 {
 	width: 31px;
 	height: 31px;
 	background: black;
-	display: block;
-	float: left;
 	text-align: center;
 	line-height: 31px;
-	margin-right: 11px;
+	margin-right: 10px;
 }
 
 .fab{
 	color: white;
 }
 
-.social:nth-child(3) {
-	margin-right: 0px;
-}
-
 .social:hover {
 	background: #ffb400;
-	box-shadow: 0px 0px 0px 6px #ffe4a3;
+	box-shadow: 0 0 0 6px #ffe4a3;
 }
 
 #order {
 	background: #f2f2f2;
-	padding: 60px 0px 100px 0px;
+	padding: 80px;
 }
 
 .form {
 	width: 293px;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 .cell {
@@ -164,8 +163,8 @@ h2 {
 	display: block;
 	height: 57px;
 	padding-left: 24px;
-	border: 0px;
-	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	border: 0;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	margin-bottom: 14px;
 	width: 100%;
 	font-size: 15px;
@@ -173,7 +172,7 @@ h2 {
 }
 
 .act {
-	border: 0px;
+	border: 0;
 	cursor: pointer;
 	font-size: 17px;
 	width: 288px;
@@ -187,12 +186,4 @@ footer {
 
 .credits {
 	font-size: 14px;
-}
-
-.button:hover {
-	background: #ffa200;
-}
-
-.button:active {
-	background: #ff7e00;
 }
