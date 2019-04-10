@@ -6,7 +6,6 @@ body {
 }
 
 #first {
-	height: 800px;
 	background: url(../img/first.jpg) no-repeat center top / cover;
 	color: #fff;
 }
@@ -17,22 +16,21 @@ body {
 	padding: 0;
 }
 
-header {
+.header {
 	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .mail {
-	float: left;
 	font-size: 14px;
 	padding-left: 25px;
 }
 
 .logo {
-	float: left;
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin: 0px 0px 0px 320px;
 }
 
 .logo span {
@@ -40,7 +38,6 @@ header {
 }
 
 .phone {
-	float: right;
 	font-size: 16px;
 	font-weight: bold;
 	padding-left: 25px;
@@ -49,8 +46,11 @@ header {
 .fa-phone{
 	transform: rotate(92deg);
 }
+.fas {
+	margin-right: 10px;
+}
 
-h1 {
+.title{
 	font-size: 41px;
 	text-transform: uppercase;
 	text-align: center;
@@ -58,7 +58,7 @@ h1 {
 	margin-top: 260px;
 }
 
-h1 span {
+.title span {
 	font-size: 31px;
 	font-weight: normal;
 	display: block;
@@ -109,7 +109,7 @@ h2 {
 .about-text {
 	text-align: center;
 	width: 600px;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 .social-block {
@@ -133,6 +133,10 @@ h2 {
 	text-align: center;
 	line-height: 31px;
 	margin-right: 11px;
+}
+
+.fab{
+	color: white;
 }
 
 .social:nth-child(3) {
@@ -179,17 +183,10 @@ h2 {
 footer {
 	background: #000;
 	color: #acacac;
-	padding: 50px 0px 60px 0px;
 }
 
 .credits {
 	font-size: 14px;
-	float: left;
-}
-
-footer .logo {
-	margin-left: 0px;
-	margin-right: 283px;
 }
 
 .button:hover {
