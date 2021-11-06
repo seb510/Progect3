@@ -1,95 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Тестовая страница</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Професиальная верстка</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet">
 </head>
-<body>
-  <section id="first">
-    <div class="container">
-      <div class="header">
-        <div class="mail">
-          <i class="fas fa-envelope"></i>
-          info@nikolaysebistian.me
-        </div>
-        <div class="logo">
-          <span>Николай </span> себистиян
-        </div>
-        <div class="phone">
-          <i class="fas fa-phone"></i>
-          +7 (495) 758-23-63
-        </div>
-      </div>
-      <h1 class="title">
-        <span>Профессиональный дизайн сайта</span> результат через 1 час после звонка
-      </h1>
-      <div class="butt">
-        <a class="button" href="#about">заказать звонок</a>
-      </div>
-    </div>
-  </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>
-        кто я такой
-      </h2>
-      <img src="img/me2.png" class="photo">
-      <h3 class="about-title">
-        обо мне
-      </h3>
-      <p class="about-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  tempor incididunt ut labore et dolore magna tempor incid
-      </p>
-      <div class="social-block">
-        <a class="social" href="#">
-          <i class="fab fa-vk"></i>
-        </a>
-        <a class="social" href="#">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a class="social" href="#">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="order">
-    <div class="container">
-      <h2>
-        заказать мои услуги
-      </h2>
-      <form class="form">
-        <input type="text" placeholder="Введите имя" class="cell">
-        <input type="email" placeholder="Введите почту" class="cell">
-        <input type="tel" placeholder="Введите телефон" class="cell">
-        <button type="submit" class="button act">Отправить запрос</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="header">
-        <div class="logo">
-          <span>николай</span> себистиян
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <a href="mailto:info@nikolaysebistian.me" class="mail header__link">
+                    <i class="fas fa-envelope"></i> info@nikolaysebistian.me
+                </a>
+                <a href="/" class="logo">
+                    <span>Николай </span> Sebistiian
+                </a>
+                <a href="tel:+74957582363" class="phone header__link">
+                    <i class="fas fa-phone"></i> +7 (495) 758-23-63
+                </a>
+            </div>
         </div>
-        <div class="credits">
-          2018 / Все права защищены
+    </header>
+    <div class="offer" id="first">
+        <div class="container">
+            <h1 class="title">
+                <span>Профессиональный дизайн сайта</span> результат через 1 час после звонка
+            </h1>
+            <div class="butt">
+                <button type="button" id="showPopup" class="button">заказать звонок</button>
+            </div>
         </div>
-        <div class="phone">
-          +7 (495) 758-23-63
-        </div>
-      </div>
     </div>
-  </footer>
-  
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
 
+    <section id="about">
+        <div class="container">
+            <h2>
+                кто я такой
+            </h2>
+            <img src="img/me2.png" class="photo">
+            <h3 class="about-title">
+                обо мне
+            </h3>
+            <p class="about-text">
+                Трудолюбие, исполнительность, ответственность, умение быстро адаптироваться в новомо проекте, стрессоустойчивость, обучаемость, отсуствие вредных превычек
+            </p>
+            <div class="social-block">
+                <a class="social" target="_blank" href="https://www.vk.com">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a class="social" target="_blank" href="https://www.facebook.com">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social" target="_blank" href="https://www.youtube.com">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container">
+            <h2>
+                заказать мои услуги
+            </h2>
+            <form class="form">
+                <input type="text" placeholder="Введите имя" class="cell">
+                <input type="email" placeholder="Введите почту" class="cell">
+                <input type="tel" placeholder="Введите телефон" class="cell">
+                <button type="submit" class="button act">Отправить запрос</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="logo">
+                    <span>николай</span> себистиян
+                </div>
+                <div class="credits">
+                    <script>
+                        let date = new Date;
+                        document.write(date.getFullYear());
+                    </script> / Все права защищены
+                </div>
+                <a href="tel:+74957582363" class="phone header__link">
+                    +7 (495) 758-23-63
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__close close"></div>
+            <div class="modal__content">
+                <form action="" class="modal__form">
+                    <input type="text" name="phone" class="cell" placeholder="Имя">
+                    <input type="tel" name="phone" class="cell" placeholder="Телефон">
+                    <button type="button" class="modal__btn button">Заказать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
