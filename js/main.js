@@ -14,8 +14,6 @@ $(document).ready(function() {
         })
     }
 
-    positionFixedHeader();
-
     /** Show popup **/
     const showPopup = () => {
 
@@ -25,12 +23,13 @@ $(document).ready(function() {
 
     };
 
-    showPopup();
-
     const hidePopup = () => {
         $(document).on('click', '.modal__btn, .close', function() {
             $('.modal').removeClass('show');
         })
     };
+
+    positionFixedHeader();
+    showPopup();
     hidePopup();
 });
